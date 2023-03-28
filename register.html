@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="blinking">REGISTER</h1>
+		<form id="register-form">
+			<label for="Name">NAME</label>
+			<input type="text" id="Name" Name="Name" required>
+
+			<label for="email">EMAIL</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="dob">DATE OF BIRTH</label>
+			<input type="date" id="dob" name="dob" required>
+
+			<label for="address">ADDRESS</label>
+			<textarea id="address" name="address" required></textarea>
+
+			<label for="phone">PHONE</label>
+			<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+			<label for="password">PASSWORD</label>
+			<input type="password" id="password" name="password" required>
+
+			<div class="button-container">
+				<input type="submit" value="SUBMIT">
+				<button onclick="loadIndex()" class="back-button">BACK</button>
+			  </div>
+			  
+		</form>
+		<p id="error" class="error"></p>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="./js/register.js"></script>
+</body>
+</html>
