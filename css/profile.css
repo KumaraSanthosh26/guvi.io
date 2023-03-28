@@ -1,0 +1,76 @@
+body {
+	background-image: url('../assets/bg1.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+h3 {
+    text-align: center;
+    color: #e207c3;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    font-weight: bolder;
+    font-family: serif;
+        }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+  }
+    h3.blinking{
+      animation: blink 6s infinite;
+  }
+
+#profile-details {
+    margin-left: 50px;
+	margin-top: 100px;
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-family: serif;
+    
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="tel"], textarea {
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type="submit"] #edit-btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+    margin-left: 300px;
+}
+
+input[type="submit"]:hover, #cancel-btn:hover, #edit-btn:hover {
+	background-color: #3e8e41;
+}
+
+#error-message {
+	color: red;
+	margin-top: 10px;
+}
